@@ -1,0 +1,23 @@
+/* *************************************** Input/Validation Control START *************************************** */
+/* On Invalid input Display this on Border */
+.input-control.error input {
+    border-color: rgb(190, 0, 0);
+  }
+  /* On Invalid input Display this on Text */
+  .input-control .error {
+    color: rgb(190, 0, 0);
+    font-size: 13px;
+    height: 14px;
+    font-weight: 700;
+    margin-top: -0%;
+  }
+  
+  .input-control input:focus {
+    outline: 0;
+  }
+  
+  /* On valid input Display this on Border */
+  .input-control.success input {
+    border-color: green;
+  }
+  /* *************************************** Input/Validation Control END *************************************** */

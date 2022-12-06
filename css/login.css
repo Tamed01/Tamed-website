@@ -145,7 +145,7 @@
 }
 
 /* ****************************************** Popup Form START ********************************************* */
-.overlayy {
+.overlay {
   position: fixed;
   top: 0%;
   bottom: 0%;
@@ -197,7 +197,7 @@
 }
 
 
-.overlayy:target {
+.overlay:target {
   visibility: visible;
   opacity: 1;
 }

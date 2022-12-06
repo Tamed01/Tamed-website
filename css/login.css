@@ -67,13 +67,13 @@
   background-size: cover;
   background-position: center;
 }
-#containerr:hover .topp:before, #containerr:hover .topp:after, #containerr:hover .bottom:before, #containerr:hover .bottom:after, #containerr:active .topp:before, #containerr:active .topp:after, #containerr:active .bottom:before, #containerr:active .bottom:after {
+#containerr:active .topp:before, #containerr:active .topp:after, #containerr:active .bottom:before, #containerr:active .bottom:after, #containerr:active .topp:before, #containerr:active .topp:after, #containerr:active .bottom:before, #containerr:active .bottom:after {
   margin-left: 220px;
   transform-origin: -220px 50%;
   transition-delay: 0s;
 }
 
-#containerr:hover .center, #containerractive .center {
+#containerr:active .center, #containerractive .center {
   opacity: 1;
   transition-delay: 0.2s;
 }
@@ -101,13 +101,13 @@
 }
 .topp:after {
   transform: rotate(135deg);
-  background-color: rgb(105, 1, 1);
+  background-color: #f70067;
   opacity: 1;
 }
 
 .bottom:before {
   transform: rotate(-45deg);
-  background-color: rgb(105, 1, 1);
+  background-color: #f70067;
   opacity: 1;
 }
 
@@ -145,7 +145,7 @@
 }
 
 /* ****************************************** Popup Form START ********************************************* */
-.overlay {
+.overlayy {
   position: fixed;
   top: 0%;
   bottom: 0%;
@@ -197,32 +197,9 @@
 }
 
 
-.overlay:target {
+.overlayy:target {
   visibility: visible;
   opacity: 1;
-}
-
-/* Holds the "Create user" content inside */
-.wrapper {
-  overflow-x: hidden;
-  margin: auto;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-left: 10%;
-  padding-right: 10%;
-  background: rgb(247, 246, 246);
-  border-radius: 5px;
-  width: 96%;
-  height: 96%;
-  position: relative;
-  transition: all 5s ease-in-out;
-}
-
-/* Hide Cell Number Arrow keys */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
 /* ************************************ With in popup form, design for Input and Labels Starts ************************************* */

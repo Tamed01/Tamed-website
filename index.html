@@ -72,22 +72,24 @@
         <div class="crContainer">
             <a href="#" class="close">&times;</a>
             <!-- *************** Form Content Starts ***************** -->
-            <div class="containerr">
-                <div class="topp"></div>
-                <div class="bottom"></div>
-                <div class="center">
-                    <h2 id="logHead">Login</h2>
-                    <p class="lemailStyle">
-                    <input type="email" id="lemail" placeholder="E-mail.." autocomplete="off"/>
-                    </p>
-                    <p class="lpasswordSyle">
-                    <input type="password" id="lpassword" name="password" placeholder="Password.." autocomplete="off"/>
-                    <i class="bi-eye-slash" id="togglePassword" onclick="myFunction()"></i> <!-- An element to toggle between password visibility -->
-                    </p>
-                    <button id="buttonnn" onclick="login()" type="submit">Sign In</button>
-                    <a href="#regDiv" id="buttonn">Create User</a> <!--Navigate to ID using href-->
+            <form class="wrapperr" style="overflow-y:auto">
+                <div class="containerr">
+                    <div class="topp"></div>
+                    <div class="bottom"></div>
+                    <div class="center">
+                        <h2 id="logHead">Login</h2>
+                        <p class="lemailStyle">
+                        <input type="email" id="lemail" placeholder="E-mail.." autocomplete="off"/>
+                        </p>
+                        <p class="lpasswordSyle">
+                        <input type="password" id="lpassword" name="password" placeholder="Password.." autocomplete="off"/>
+                        <i class="bi-eye-slash" id="togglePassword" onclick="myFunction()"></i> <!-- An element to toggle between password visibility -->
+                        </p>
+                        <button id="buttonnn" onclick="login()" type="submit">Sign In</button>
+                        <a href="#regDiv" id="buttonn">Create User</a> <!--Navigate to ID using href-->
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
     <!-- *************** ********************************************************* ***************** -->

@@ -202,6 +202,15 @@
   opacity: 1;
 }
 
+.wrapperr {
+  overflow-x: hidden;
+  margin: auto;
+  background: rgb(247, 246, 246);
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
 /* ************************************ With in popup form, design for Input and Labels Starts ************************************* */
 /* Labels on register form */
 label {

@@ -24,21 +24,49 @@
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="../dazzle/css/validation.css">
+    <link href="../dazzle/css/login.css" rel="stylesheet" />
+    <link href="../dazzle/css/regValidation.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 
     <!-- script
    ================================================== -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- favicons
 	================================================== -->
     <link rel="shortcut icon" href="../dazzle/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="../dazzle/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../dazzle/favicon.ico" type="image/x-icon">    
 
 </head>
 
 <body id="top">
-
+    <!-- *************** Hidden Login Form Start ***************** -->
+    <div class="overlay" id="divOne">
+        <div class="crContainer">
+            <!-- *************** Form Content Starts ***************** -->
+            <div id="containerr">
+                <div class="topp"></div>
+                <div class="bottom"></div>
+                <div class="center">
+                  <h2 id="logHead">Login</h2>
+                  <p class="lemailStyle">
+                    <input type="email" id="lemail" placeholder="E-mail.." autocomplete="off"/>
+                  </p>
+                  <p class="lpasswordSyle">
+                    <input type="password" id="lpassword" name="password" placeholder="Password.." autocomplete="off"/>
+                    <i class="bi-eye-slash" id="togglePassword" onclick="myFunction()"></i> <!-- An element to toggle between password visibility -->
+                  </p>
+                    <button id="buttonnn" onclick="login()" type="submit">Sign In</button>
+                    <a href="#regDiv" id="buttonn">Create User</a> <!--Navigate to ID using href-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- *************** ********************************************************* ***************** -->
     <!-- header 
    ================================================== -->
    <header id="header" class="row">   
@@ -56,7 +84,7 @@
 				<li><a class="smoothscroll"  href="#download" title="download">Download</a></li>	
 			</ul>
 
-            <a href="../dazzle/html/index.html" title="sign-up" class="button button-primary cta">Sign Up</a>
+            <a href="#regDiv" title="sign-up" class="button button-primary cta">Sign Up</a>
 		</nav>
 
 		<a class="header-menu-toggle" href="#"><span>Menu</span></a>    	
@@ -86,7 +114,7 @@
                             <span class="icon-download" aria-hidden="true"></span>
                             Download App
                         </a>
-                        <a href="../dazzle/html/index.html" data-action="share/whatsapp/share" data-aos="fade-up" class="button stroke">
+                        <a href="#divOne" data-action="share/whatsapp/share" data-aos="fade-up" class="button stroke">
                             <span class="icon-padlock" aria-hidden="true"></span>
                             Login
                         </a>
@@ -551,6 +579,9 @@
 
     <!-- Java Script
     ================================================== -->
+    <script src="../dazzle/js/serverside.js"></script>
+    <script src="../dazzle/js/regValidation.js"></script>
+    <script src="../dazzle/js/login.js"></script>
     <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>

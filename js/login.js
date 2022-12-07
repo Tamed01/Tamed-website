@@ -9,3 +9,4 @@ function myFunction() {
       document.getElementById("togglePassword").classList = "bi-eye-slash"
     }
 }
+

@@ -123,3 +123,12 @@ function register () {
     var next = window.location.href = ('file:///C:/Users/agridiesel1/Desktop/websites/dazzle/index.html');
       window.location.replace(next);
   })
+
+
+  firebase.auth().onAuthStateChanged(function(state) {
+    if(state) {
+      database.ref('/Users/' + user.id).on('value', function(snapshot) {
+        
+      })
+    }
+  });
